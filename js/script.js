@@ -1,6 +1,9 @@
 let respostas = document.querySelectorAll("#resposta")
 let letras = document.querySelectorAll("#letra")
 let list = ['L', 'W', 'E', 'M', 'O', 'L']
+let startButton = document.getElementById('comeca')
+let checkButton = document.querySelector('.checar')
+
 
 function shuffleArray(arr) {
 
@@ -13,6 +16,8 @@ return arr;
 
 function start() {
 
+    displayLetras()
+
     shuffleArray(list)
     
     letras[0].value = `${list[0]}`
@@ -23,6 +28,9 @@ function start() {
     letras[5].value = `${list[5]}`
 
     clicked()
+
+    startButton.style.display = 'none'
+    
 }
 function clicked() {
 
@@ -32,30 +40,36 @@ function clicked() {
                 respostas[0].value = `${element.value}` 
                 respostas[1].value = "."
                 element.style.display = "none"
+                checkButton.style.backgroundColor = 'white'
     
             } else if (respostas[1].value === ".") {
                 respostas[1].value = `${element.value}`
                 respostas[2].value = "."
                 element.style.display = "none"
+                checkButton.style.backgroundColor = 'white'
     
             } else if (respostas[2].value === ".") {
                 respostas[2].value = `${element.value}`
                 respostas[3].value = "."
                 element.style.display = "none"
+                checkButton.style.backgroundColor = 'white'
     
             } else if (respostas[3].value === ".") {
                 respostas[3].value = `${element.value}`
                 respostas[4].value = "."
                 element.style.display = "none"
+                checkButton.style.backgroundColor = 'white'
     
             } else if (respostas[4].value === ".") {
                 respostas[4].value = `${element.value}`
                 respostas[5].value = "."
                 element.style.display = "none"
+                checkButton.style.backgroundColor = 'white'
     
             } else if (respostas[5].value === ".") {
                 respostas[5].value = `${element.value}`
                 element.style.display = "none"
+                checkButton.style.backgroundColor = 'white'
             }
         }
     })
@@ -73,6 +87,7 @@ function apagar() {
     letras.forEach(element => {
         element.style.display = "flex"
     });
+    checkButton.style.backgroundColor = 'white'
 }
 
 function check() {
@@ -147,5 +162,15 @@ function check() {
         mole.style.visibility = "visible"
         apagar()
 
+    } else {
+        checkButton.style.backgroundColor = 'red'
     }
+}
+function displayLetras() {
+    letras.forEach(element => {
+        element.style.display = 'flex'
+        element.style.height = '4rem'
+    });
+    let buttons = document.querySelector('.buttons')
+    buttons.style.display = 'flex'
 }

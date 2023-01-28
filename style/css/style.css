@@ -9,30 +9,46 @@ html, body {
 .container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
+  background-color: #929292;
 }
 .container .palavras {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 40%;
-  height: 50%;
+  width: 20%;
+  height: 65%;
+  margin: 1rem;
+  background: url("../../img/papel.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  box-shadow: -5px 5px 5px rgba(65, 65, 65, 0.9176470588);
   flex-wrap: wrap;
 }
 .container .palavras input {
   width: 3.8rem;
   height: 2rem;
   margin: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 0.7rem;
   text-align: center;
+  border: none;
   visibility: hidden;
 }
 .container .game {
   display: flex;
   flex-direction: column;
-  width: 60%;
-  height: 100%;
+  width: 50vw;
+  height: max-content;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #3f2707;
+  border-radius: 0.3rem;
+  box-shadow: inset 0 0 5px black, 0 0 10px black;
 }
 .container .game .container-2 {
   display: flex;
@@ -42,6 +58,8 @@ html, body {
   width: 100%;
   height: 60%;
   background-color: #075500;
+  border: solid 2px #30220f;
+  box-shadow: inset 0 0 5px black;
 }
 .container .game .container-2 .respostas {
   display: flex;
@@ -54,17 +72,10 @@ html, body {
   background-color: rgba(255, 255, 255, 0);
   border: none;
   font-size: 2rem;
+  color: #fff;
   text-align: center;
-}
-.container .game .container-2 .buttons {
-  display: flex;
-  flex-direction: column;
-}
-.container .game .container-2 .buttons .checar {
-  margin: 0.4rem;
-}
-.container .game .container-2 .buttons .apagar {
-  margin: 0.4rem;
+  outline: 0;
+  cursor: default;
 }
 .container .game .letras {
   display: flex;
@@ -72,15 +83,57 @@ html, body {
   align-items: center;
   flex-direction: row;
   width: 100%;
-  height: 40%;
+  height: 15%;
 }
 .container .game .letras #letra {
-  width: 5rem;
-  height: 5rem;
+  display: flex;
+  width: 4rem;
+  height: 0rem;
   margin: 0.5rem;
-  background-color: #444444;
+  background-color: rgba(255, 255, 255, 0);
   font-size: 1.5rem;
+  color: #fff;
   text-align: center;
+  text-shadow: 0 0 3px white;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.buttons {
+  display: none;
+  flex-direction: column;
+}
+.buttons .checar {
+  width: 80px;
+  margin-top: 0.5rem;
+  border: none;
+  box-shadow: inset 0 0 2px white, 0 0 5px white;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.buttons .apagar {
+  width: 80px;
+  margin-top: 0.5rem;
+  border: none;
+  box-shadow: inset 0 0 2px white, 0 0 5px white;
+  cursor: pointer;
+}
+.buttons .embaralhar {
+  width: 80px;
+  margin-top: 0.5rem;
+  border: none;
+  box-shadow: inset 0 0 2px white, 0 0 5px white;
+  cursor: pointer;
+}
+
+#comeca {
+  width: 80px;
+  margin-top: 0.5rem;
+  border: none;
+  box-shadow: inset 0 0 2px white, 0 0 5px white;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
