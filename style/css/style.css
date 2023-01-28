@@ -1,0 +1,86 @@
+html, body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.container .palavras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 40%;
+  height: 50%;
+  flex-wrap: wrap;
+}
+.container .palavras input {
+  width: 3.8rem;
+  height: 2rem;
+  margin: 0.5rem 1rem;
+  text-align: center;
+  visibility: hidden;
+}
+.container .game {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+}
+.container .game .container-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+  background-color: #075500;
+}
+.container .game .container-2 .respostas {
+  display: flex;
+  flex-direction: row;
+}
+.container .game .container-2 .respostas #resposta {
+  width: 4rem;
+  height: 4rem;
+  margin: 5rem 0.5rem;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 2rem;
+  text-align: center;
+}
+.container .game .container-2 .buttons {
+  display: flex;
+  flex-direction: column;
+}
+.container .game .container-2 .buttons .checar {
+  margin: 0.4rem;
+}
+.container .game .container-2 .buttons .apagar {
+  margin: 0.4rem;
+}
+.container .game .letras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 40%;
+}
+.container .game .letras #letra {
+  width: 5rem;
+  height: 5rem;
+  margin: 0.5rem;
+  background-color: #444444;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
