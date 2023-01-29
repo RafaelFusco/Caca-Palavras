@@ -114,9 +114,11 @@ html, body {
   margin: 0.5rem 1rem;
   background-color: rgba(255, 255, 255, 0);
   font-size: 0.7rem;
+  font-weight: 900;
   text-align: center;
   border: none;
   visibility: hidden;
+  font-family: "Shadows Into Light", cursive;
 }
 @media (max-width: 820px) and (max-height: 1180px) {
   .container .palavras input {
@@ -243,6 +245,7 @@ html, body {
   text-align: center;
   outline: 0;
   cursor: default;
+  font-family: "Shadows Into Light", cursive;
 }
 @media (max-width: 540px) {
   .container .game .container-2 .respostas #resposta {
@@ -293,6 +296,7 @@ html, body {
   border: none;
   outline: 0;
   cursor: pointer;
+  font-family: "Shadows Into Light", cursive;
   transition-duration: 0.5s;
 }
 @media (max-width: 540px) {
