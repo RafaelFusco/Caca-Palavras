@@ -95,75 +95,121 @@ function check() {
     if (respostas[0].value == 'M' && respostas[1].value == 'E' && respostas[2].value == 'L' && respostas[3].value == 'L' && respostas[4].value == 'O' && respostas[5].value == 'W') {
         let mellow = document.getElementById("mellow")
         mellow.style.visibility = "visible"
-        apagar()
+        checkButton.style.backgroundColor = 'green'
+        setTimeout(() => {
+            apagar() 
+        }, 800);
+        
 
     } else if (respostas[0].value == 'E' && respostas[1].value == 'L' && respostas[2].value == 'M' && respostas[3].value == 'O' && respostas[4].value == 'L' && respostas[5].value == 'W') {
         let elmolw = document.getElementById("elmolw")
         elmolw.style.visibility = "visible"
-        apagar()
+        checkButton.style.backgroundColor = 'green'
+        setTimeout(() => {
+            apagar() 
+        }, 800);
 
     } else if (respostas[0].value == 'M' && respostas[1].value == 'O' && respostas[2].value == 'W' && respostas[3].value == '.' && respostas[4].value == '' && respostas[5].value == '') {
         let mow = document.getElementById("mow")
         mow.style.visibility = "visible"
-        apagar()
+        checkButton.style.backgroundColor = 'green'
+        setTimeout(() => {
+            apagar() 
+        }, 800);
 
     } else if (respostas[0].value == 'M' && respostas[1].value == 'E' && respostas[2].value == 'W' && respostas[3].value == '.' && respostas[4].value == '' && respostas[5].value == '') {
         let mew = document.getElementById("mew")
         mew.style.visibility = "visible"
-        apagar()
+        checkButton.style.backgroundColor = 'green'
+        setTimeout(() => {
+            apagar() 
+        }, 800);
 
     } else if (respostas[0].value == 'L' && respostas[1].value == 'O' && respostas[2].value == 'W' && respostas[3].value == '.' && respostas[4].value == '' && respostas[5].value == '') {
         let low = document.getElementById("low")
         low.style.visibility = "visible"
-        apagar()
+        checkButton.style.backgroundColor = 'green'
+        setTimeout(() => {
+            apagar() 
+        }, 800);
 
     } else if (respostas[0].value == 'W' && respostas[1].value == 'O' && respostas[2].value == 'E' && respostas[3].value == '.' && respostas[4].value == '' && respostas[5].value == '') {
         let woe = document.getElementById("woe")
         woe.style.visibility = "visible"
-        apagar()
+        checkButton.style.backgroundColor = 'green'
+        setTimeout(() => {
+            apagar() 
+        }, 800);
 
     } else if (respostas[0].value == 'O' && respostas[1].value == 'W' && respostas[2].value == 'L' && respostas[3].value == '.' && respostas[4].value == '' && respostas[5].value == '') {
         let owl = document.getElementById("owl")
         owl.style.visibility = "visible"
-        apagar()
+        checkButton.style.backgroundColor = 'green'
+        setTimeout(() => {
+            apagar() 
+        }, 800);
 
     } else if (respostas[0].value == 'E' && respostas[1].value == 'L' && respostas[2].value == 'M' && respostas[3].value == '.' && respostas[4].value == '' && respostas[5].value == '') {
         let elm = document.getElementById("elm")
         elm.style.visibility = "visible"
-        apagar()
+        checkButton.style.backgroundColor = 'green'
+        setTimeout(() => {
+            apagar() 
+        }, 800);
 
     } else if (respostas[0].value == 'O' && respostas[1].value == 'W' && respostas[2].value == 'E' && respostas[3].value == '.' && respostas[4].value == '' && respostas[5].value == '') {
         let owe = document.getElementById("owe")
         owe.style.visibility = "visible"
-        apagar()
+        checkButton.style.backgroundColor = 'green'
+        setTimeout(() => {
+            apagar() 
+        }, 800);
     
     } else if (respostas[0].value == 'M' && respostas[1].value == 'E' && respostas[2].value == 'W' && respostas[3].value == 'L' && respostas[4].value == '.' && respostas[5].value == '') {
         let mewl = document.getElementById("mewl")
         mewl.style.visibility = "visible"
-        apagar()
+        checkButton.style.backgroundColor = 'green'
+        setTimeout(() => {
+            apagar() 
+        }, 800);
 
     } else if (respostas[0].value == 'W' && respostas[1].value == 'E' && respostas[2].value == 'L' && respostas[3].value == 'L' && respostas[4].value == '.' && respostas[5].value == '') {
         let well = document.getElementById("well")
         well.style.visibility = "visible"
-        apagar()
+        checkButton.style.backgroundColor = 'green'
+        setTimeout(() => {
+            apagar() 
+        }, 800);
 
     } else if (respostas[0].value == 'M' && respostas[1].value == 'E' && respostas[2].value == 'O' && respostas[3].value == 'W' && respostas[4].value == '.' && respostas[5].value == '') {
         let meow = document.getElementById("meow")
         meow.style.visibility = "visible"
-        apagar()
+        checkButton.style.backgroundColor = 'green'
+        setTimeout(() => {
+            apagar() 
+        }, 800);
 
     } else if (respostas[0].value == 'M' && respostas[1].value == 'O' && respostas[2].value == 'L' && respostas[3].value == 'L' && respostas[4].value == '.' && respostas[5].value == '') {
         let moll = document.getElementById("moll")
         moll.style.visibility = "visible"
-        apagar()
+        checkButton.style.backgroundColor = 'green'
+        setTimeout(() => {
+            apagar() 
+        }, 800);
 
     } else if (respostas[0].value == 'M' && respostas[1].value == 'O' && respostas[2].value == 'L' && respostas[3].value == 'E' && respostas[4].value == '.' && respostas[5].value == '') {
         let mole = document.getElementById("mole")
         mole.style.visibility = "visible"
-        apagar()
+        checkButton.style.backgroundColor = 'green'
+        setTimeout(() => {
+            apagar() 
+        }, 800);
 
     } else {
         checkButton.style.backgroundColor = 'red'
+        setTimeout(() => {
+            apagar() 
+        }, 1000);
     }
 }
 function displayLetras() {
