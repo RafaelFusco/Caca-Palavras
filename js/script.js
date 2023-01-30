@@ -28,8 +28,8 @@ function start() {
     letras[5].value = `${list[5]}`
 
     clicked()
-
     startButton.style.display = 'none'
+    apagar()
     
 }
 function clicked() {
