@@ -1,307 +1,79 @@
-@import '_utilities'
+@import '_mixins'
+@import '_placeholder'
 
 html, body
     box-sizing: border-box
-    width: 100vw
-    height: 100vh
-    margin: 0
-    padding: 0
+    @include size--marg( auto, 100vh, 0, 0)
 
 .container
-    display: flex   
-    flex-direction: row
-    justify-content: center
-    align-items: center
-    width: 100%
-    height: 100%
-    background: url('../../img/fundo.jpg') 
-    background-size: 100% 100%
-    background-repeat: no-repeat
-
-    @include mobile-1
-        flex-direction: column
-
-    @include mobile-2
-        flex-direction: column
-
-    @include mobile-3
-        flex-direction: column
-
-    @include mobile-4
-        flex-direction: column
-
-    @include mobile-5
-        flex-direction: column
-
-    @include mobile-6
-        flex-direction: column
-
-    @include mobile-7
-        flex-direction: column
+    @include display-direc( flex, row, center, center)
+    @include size--marg( 100%, 100%, 0, 0)
+    @include background-img(url('../../img/fundo.jpg'), 100% 100%, no-repeat)
 
     .palavras
-        display: flex
-        justify-content: center
-        align-items: center
-        flex-direction: row
-        width: 20%
-        height: 65%
-        margin: 1rem
-        background: url("../../img/papel.jpg")
-        background-size: 100% 100%
-        background-repeat: no-repeat
+        @include display-direc( flex, row, center, center)
+        @include size--marg( 20%, 65%, 1rem, 0)
+        @include background-img(url("../../img/papel.jpg"), 100% 100%, no-repeat)
         box-shadow: -5px 5px 5px #414141ea
         flex-wrap: wrap
 
-        @include mobile-1
-            width: 80%
-            height: 35%
-
-        @include mobile-2
-            width: 80%
-            height: 35%
-
-        @include mobile-3
-            width: 80%
-            height: 35%
-
-        @include mobile-4
-            width: 80%
-            height: 35%
-
-        @include mobile-5
-            width: 80%
-            height: 35%
-            
-        @include mobile-6
-            width: 80%
-            height: 35%
-
-        @include mobile-7
-            width: 80%
-            height: 35%
-
         input
-            width: 3.8rem
-            height: 2rem
-            margin: 0.5rem 1rem
+            @include size--marg( 3.8rem, 2rem, 0.5rem 1rem, 0)
+            @include custom-font(0.7rem, 'Shadows Into Light', #000, center, none)
+            font-weight: 900           
             background-color: #ffffff00
-            font-size: 0.7rem
-            font-weight: 900
-            text-align: center
             border: none
             visibility: hidden
-            font-family: 'Shadows Into Light', cursive
-
-            @include mobile-2
-                width: 4.5rem
-                margin: 0 0.5rem
-                font-size: 1rem
-
-            @include mobile-3
-                width: 4.5rem
-                margin: 0 0.5rem
-                font-size: 1rem
-
-            @include mobile-4
-                width: 2.5rem
-                margin: 0 0.5rem
-                font-size: 0.5rem
-
-            @include mobile-5
-                width: 2.5rem
-                margin: 0 0.5rem
-                font-size: 0.5rem
-
-            @include mobile-6
-                width: 2.5rem
-                margin: 0 0.5rem
-                font-size: 0.5rem
-
-            @include mobile-7
-                width: 2.5rem
-                margin: 0 0.5rem
-                font-size: 0.5rem
 
     .game
-        display: flex
-        flex-direction: column
-        width: 50vw
-        height: 50%
-        margin: 1rem
-        padding: 1rem
-        background: url("../../img/quadro.png")
-        background-size: 100% 100%
-        background-repeat: no-repeat
+        @include display-direc( flex, column, baseline, baseline)
+        @include size--marg( 50vw, 50%, 1rem, 1rem)
+        @include background-img(url("../../img/quadro.png"), 100% 100%, no-repeat)
         box-shadow: -5px 5px 5px #414141ea
 
-        @include mobile-0
-            width: 50vw
-            height: 35%
-
-        @include mobile-1
-            width: 80vw
-            height: 35%
-
-        @include mobile-2
-            width: 80vw
-            height: 35%
-
-        @include mobile-3
-            width: 80vw
-            height: 35%
-
-        @include mobile-4
-            width: 80vw
-            height: 35%
-
-        @include mobile-5
-            width: 80vw
-            height: 35%
-            
-        @include mobile-6
-            width: 80vw
-            height: 35%
-
-        @include mobile-7
-            width: 80vw
-            height: 35%
-
         .container-2
-            display: flex
-            flex-direction: column
-            justify-content: center
-            align-items: center
-            width: 100%
-            height: 60%
-            
+            @include display-direc( flex, column, center, center)
+            @include size--marg( 100%, 60%, 0, 0)
+
             .respostas
-                display: flex
-                flex-direction: row
+                @include display-direc( flex, row, baseline, baseline)
                 
                 #resposta
-                    width: 4rem
-                    height: 4rem
-                    margin: 2.5rem 0.5rem
+                    @include size--marg( 4rem, 4rem, 2.5rem 0.5rem, 0)
+                    @include custom-font(2rem, 'Shadows Into Light', #fff, center, 0 0 5px white )
                     background-color: #ffffff00
                     border: none
-                    font-size: 2rem
-                    color: #fff
-                    text-align: center
                     outline: 0
                     cursor: default
-                    font-family: 'Shadows Into Light', cursive
-
-                    @include mobile-4
-                        width: 1rem
-                        height: 1rem
-                        font-size: 1rem
-
-                    @include mobile-5
-                        width: 1rem
-                        height: 1rem
-                        font-size: 1rem
-                        
-                    @include mobile-6
-                        width: 1rem
-                        height: 1rem
-                        font-size: 1rem
-
-                    @include mobile-7
-                        width: 1rem
-                        height: 1rem
-                        font-size: 1rem
 
         .letras
-            display: flex
-            justify-content: center
-            align-items: center
-            flex-direction: row
-            width: 100%
-            height: 15%
+            @include display-direc( flex, row, center, center)
+            @include size--marg( 100%, 15%, 0, 0)
             
             #letra
-                display: flex
-                width: 4rem
-                height: 0rem
-                margin: 2.5rem 0.5rem
+                @include display-direc( flex, row, baseline, baseline)
+                @include size--marg( 4rem, 0, 2.5rem 0.5rem, 0)
+                @include custom-font(2rem, 'Shadows Into Light', #fff, center, 0 0 5px white )
                 background-color: #ffffff00
-                font-size: 1.5rem
-                color: #fff
-                text-align: center
-                text-shadow: 0 0 3px white
                 border: none
                 outline: 0
                 cursor: pointer
-                font-family: 'Shadows Into Light', cursive
-                transition-duration: 0.5s
-
-                @include mobile-4
-                    width: 1rem
-                    font-size: 1rem
-
-                @include mobile-5
-                    width: 1rem
-                    font-size: 1rem
-                    
-                @include mobile-6
-                    width: 1rem
-                    font-size: 1rem
-
-                @include mobile-7
-                    width: 1rem
-                    font-size: 1rem           
+                transition-duration: 0.5s       
 
 .buttons
     display: none
     flex-direction: column
     width: 80px
 
-    @include mobile-3
-        flex-direction: row
-        width: 80% 
-
-    @include mobile-4
-        flex-direction: row
-        width: 80% 
-
-    @include mobile-5
-        flex-direction: row
-        width: 80% 
-        
-    @include mobile-6
-        flex-direction: row
-        width: 80% 
-
-    @include mobile-7
-        flex-direction: row
-        width: 80% 
-
     .checar
-        width: 100%
-        margin: 0.2rem
-        border: none
-        box-shadow: inset 0 0 2px white, 0 0 5px white
-        cursor: pointer
-        transition-duration: 0.2s
+        @extend %custom-buttons
 
     .apagar
-        width: 100%
-        margin: 0.2rem
-        border: none
-        box-shadow: inset 0 0 2px white, 0 0 5px white
-        cursor: pointer
+        @extend %custom-buttons
 
     .embaralhar
-        width: 100%
-        margin: 0.2rem
-        border: none
-        box-shadow: inset 0 0 2px white, 0 0 5px white
-        cursor: pointer
+        @extend %custom-buttons
 
 #comeca
+    @extend %custom-buttons
     width: 80px
-    margin-top: 0.5rem
-    border: none
-    box-shadow: inset 0 0 2px white, 0 0 5px white
-    cursor: pointer

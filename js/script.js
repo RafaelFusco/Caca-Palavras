@@ -4,7 +4,6 @@ let list = ['L', 'W', 'E', 'M', 'O', 'L']
 let startButton = document.getElementById('comeca')
 let checkButton = document.querySelector('.checar')
 
-
 function shuffleArray(arr) {
 
 for (let i = arr.length - 1; i > 0; i--) {
@@ -99,7 +98,6 @@ function check() {
         setTimeout(() => {
             apagar() 
         }, 800);
-        
 
     } else if (respostas[0].value == 'E' && respostas[1].value == 'L' && respostas[2].value == 'M' && respostas[3].value == 'O' && respostas[4].value == 'L' && respostas[5].value == 'W') {
         let elmolw = document.getElementById("elmolw")

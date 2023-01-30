@@ -1,0 +1,23 @@
+@mixin display-direc($display, $flex-direc, $just-cont, $align-item)
+    display: $display
+    flex-direction: $flex-direc
+    justify-content: $just-cont
+    align-items: $align-item
+
+@mixin size--marg($width, $height, $margin, $padding)
+    width: $width
+    height: $height
+    margin: $margin
+    padding: $padding
+
+@mixin background-img($bground, $bg-size, $bg-repeat)
+    background: $bground
+    background-size: $bg-size
+    background-repeat: $bg-repeat
+
+@mixin custom-font($font, $font-fam, $color, $txt-align, $txt-shadow)
+    font-size: $font
+    font-family: $font-fam                 
+    color: $color
+    text-align: $txt-align
+    text-shadow: $txt-shadow
