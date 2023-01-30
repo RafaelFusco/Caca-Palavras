@@ -71,9 +71,9 @@ html, body {
   background-repeat: no-repeat;
   box-shadow: -5px 5px 5px rgba(65, 65, 65, 0.9176470588);
 }
-.container .game .container-2 {
+.container .game .respostas {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -81,13 +81,7 @@ html, body {
   margin: 0;
   padding: 0;
 }
-.container .game .container-2 .respostas {
-  display: flex;
-  flex-direction: row;
-  justify-content: baseline;
-  align-items: baseline;
-}
-.container .game .container-2 .respostas #resposta {
+.container .game .respostas #resposta {
   width: 4rem;
   height: 4rem;
   margin: 2.5rem 0.5rem;

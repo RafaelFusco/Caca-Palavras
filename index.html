@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="style/css/style.css">
     <link rel="stylesheet" href="style/css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Caça Palavras</title>
 </head>
 <body>
     <div class="container">
-        
         <div class="palavras">
             <input autocomplete="off" id="elmolw" value="ELMOLW">
             <input autocomplete="off" id="mellow" value="MELLOW">
@@ -31,17 +30,15 @@
 
         <div class="game">
 
-            <div class="container-2">
-                <div class="respostas">
-                    <input autocomplete="off" id="resposta" readonly value="."></input>
-                    <input autocomplete="off" id="resposta" readonly value=""></input>
-                    <input autocomplete="off" id="resposta" readonly value=""></input>
-                    <input autocomplete="off" id="resposta" readonly value=""></input>
-                    <input autocomplete="off" id="resposta" readonly value=""></input>
-                    <input autocomplete="off" id="resposta" readonly value=""></input> 
-                </div>
+            <div class="respostas">
+                <input autocomplete="off" id="resposta" readonly value="."></input>
+                <input autocomplete="off" id="resposta" readonly value=""></input>
+                <input autocomplete="off" id="resposta" readonly value=""></input>
+                <input autocomplete="off" id="resposta" readonly value=""></input>
+                <input autocomplete="off" id="resposta" readonly value=""></input>
+                <input autocomplete="off" id="resposta" readonly value=""></input> 
             </div>
-
+        
             <div class="letras">
                 <input autocomplete="off" id="letra" readonly value=""></input>
                 <input autocomplete="off" id="letra" readonly value=""></input>
@@ -51,13 +48,14 @@
                 <input autocomplete="off" id="letra" readonly value=""></input>
             </div>
         </div>
+
         <button id="comeca" onclick="start()">Começar</button>
+
         <div class="buttons">
             <button class="apagar" onclick="apagar()">Apagar</button>
             <button class="checar" onclick="check()">Checar</button>
             <button class="embaralhar" onclick="start()">Embaralhar</button>
         </div>
-
     </div>
     <script src="js/script.js"></script>
 </body>

@@ -166,28 +166,28 @@
   }
 }
 @media (max-width: 540px) {
-  .container .game .container-2 .respostas #resposta {
+  .container .game .respostas #resposta {
     width: 1rem;
     height: 1rem;
     font-size: 1rem;
   }
 }
 @media (max-width: 425px) {
-  .container .game .container-2 .respostas #resposta {
+  .container .game .respostas #resposta {
     width: 1rem;
     height: 1rem;
     font-size: 1rem;
   }
 }
 @media (max-width: 340px) {
-  .container .game .container-2 .respostas #resposta {
+  .container .game .respostas #resposta {
     width: 1rem;
     height: 1rem;
     font-size: 1rem;
   }
 }
 @media (max-width: 280px) {
-  .container .game .container-2 .respostas #resposta {
+  .container .game .respostas #resposta {
     width: 1rem;
     height: 1rem;
     font-size: 1rem;

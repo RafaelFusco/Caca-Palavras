@@ -31,20 +31,17 @@ html, body
         @include background-img(url("../../img/quadro.png"), 100% 100%, no-repeat)
         box-shadow: -5px 5px 5px #414141ea
 
-        .container-2
-            @include display-direc( flex, column, center, center)
+        .respostas
+            @include display-direc( flex, row, center, center)
             @include size--marg( 100%, 60%, 0, 0)
-
-            .respostas
-                @include display-direc( flex, row, baseline, baseline)
-                
-                #resposta
-                    @include size--marg( 4rem, 4rem, 2.5rem 0.5rem, 0)
-                    @include custom-font(2rem, 'Shadows Into Light', #fff, center, 0 0 5px white )
-                    background-color: #ffffff00
-                    border: none
-                    outline: 0
-                    cursor: default
+            
+            #resposta
+                @include size--marg( 4rem, 4rem, 2.5rem 0.5rem, 0)
+                @include custom-font(2rem, 'Shadows Into Light', #fff, center, 0 0 5px white )
+                background-color: #ffffff00
+                border: none
+                outline: 0
+                cursor: default
 
         .letras
             @include display-direc( flex, row, center, center)
